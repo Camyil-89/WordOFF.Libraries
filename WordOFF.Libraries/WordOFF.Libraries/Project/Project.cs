@@ -37,7 +37,9 @@ namespace WordOFF.Libraries.Project
 
 		public ObservableCollection<Frame.WordFrame> Frames = new ObservableCollection<Frame.WordFrame>();
 
-
+		[XmlIgnore]
+		/// путь до папки с отчетом
+		public string PathToProject = "";
 		[XmlIgnore]
 		public bool Changes = false;
 

@@ -19,6 +19,8 @@ namespace WordOFF.Libraries.WOFF
 				throw new System.IO.FileNotFoundException("WOFF file not find!");
 			Path = PathToWOFFFile;
 
+			Project.PathToProject = new FileInfo(Path).DirectoryName;
+
 			List<string> images = new List<string>();
 			foreach (var i in Project.Frames)
 				if (i.Type == TypeFrame.Image)
