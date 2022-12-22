@@ -13,6 +13,8 @@ namespace WordOFF.Libraries.Project
 {
 	public enum TypeProject : int
 	{
+		[Description("Устаревший")]
+		ImageProject = 1,
 		[Description("Фрейм")]
 		FrameProject = 2,
 	}
